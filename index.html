@@ -3,115 +3,662 @@
 <head>
 <script>window.Intl=window.Intl||{};Intl.t=function(s){return(Intl._locale&&Intl._locale[s])||s;};</script>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>You're up. Here's what works.</title>
-<meta name="description" content="Free 2-tap baby sleep tool for tired UK parents. Fix hourly wakes, settling and 4am starts. No signup, NHS-safe advice.">
-<meta name="theme-color" content="#0F0F23">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👶</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ParentPick.co.uk — You're up. Here's what works. | NHS-Aligned Baby Sleep Picks</title>
+<meta name="description" content="Tired UK parent at 3am? Take our 2-tap baby sleep quiz. Get NHS-aligned product picks that actually work — swaddles, sleep sacks, white noise & blackout blinds. No signup.">
+<link rel="canonical" href="https://parentpick.co.uk/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://parentpick.co.uk/">
+<meta property="og:title" content="ParentPick — Baby Sleep Products That Actually Work">
+<meta property="og:description" content="2-tap quiz for tired UK parents. NHS-aligned picks, no fluff.">
+<meta property="og:site_name" content="ParentPick">
+<meta property="og:image" content="https://parentpick.co.uk/og-image.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ParentPick — You're up. Here's what works.">
+<meta name="twitter:description" content="NHS-aligned baby sleep picks for UK parents. Take the 2-tap quiz.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-:root{ --bg1:#0F0F23; --bg2:#1E1B4E; --bg3:#5B21B6; --purple:#7C3AED; --amber1:#F59E0B; --amber2:#D97706; --green:#059669; --gold:#FBBF24; --card:rgba(255,255,255,0.92);
-}
-*{box-sizing:border-box}
-html,body{height:100%;margin:0}
-body{ font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; background: radial-gradient(900px 600px at 85% -5%, rgba(124,58,237,0.25), transparent 60%), linear-gradient(160deg, var(--bg1) 0%, var(--bg2) 46%, var(--bg3) 100%); color:#0F172A; -webkit-font-smoothing:antialiased; -webkit-tap-highlight-color:transparent;
-}
-.page{min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:36px 16px 100px}
-.hero{text-align:center;max-width:720px;margin:0 auto 26px}
-.hero h1{font-size:48px;line-height:1.05;letter-spacing:-0.02em;font-weight:800;color:#fff;margin:0 0 10px}
-.hero p{font-size:17px;color:rgba(255,255,255,0.86);margin:0 0 16px;font-weight:500}
-.trust-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.96);color:#1E1B4E;font-weight:700;font-size:14px;padding:9px 16px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,0.18);backdrop-filter:blur(6px)}
-.trust-pill .stars{color:var(--gold);letter-spacing:0.5px}
-.card-wrap{width:100%;max-width:480px;perspective:1200px;margin:0 auto;position:relative}
-.card{background:var(--card);-webkit-backdrop-filter:blur(40px);backdrop-filter:blur(40px);border-radius:32px;padding:28px;box-shadow:0 24px 70px rgba(5,5,20,0.45), inset 0 1px 0 rgba(255,255,255,0.7), inset 0 -1px 1px rgba(0,0,0,0.04);transform-style:preserve-3d;transition:transform.16s ease}
-.progress{position:relative;margin-bottom:26px}
-.progress-track{position:absolute;top:15px;left:24px;right:24px;height:2px;background:#E5E7EB;border-radius:2px;overflow:hidden}
-.progress-fill{height:100%;width:33.3%;background:var(--purple);border-radius:2px;transition:width.4s ease;position:relative}
-.progress-fill::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);animation:shimmer 1.8s infinite}
-@keyframes shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(200%)}}
-.progress-dots{display:flex;justify-content:space-between;position:relative;z-index:2}
-.dot{width:32px;height:32px;border-radius:50%;background:#fff;border:2px solid #E5E7EB;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#6B7280;transition:all.3s}
-.dot.active{border-color:var(--purple);background:var(--purple);color:#fff;box-shadow:0 0 0 5px rgba(124,58,237,0.14)}
-.step-title{font-size:22px;font-weight:800;letter-spacing:-0.02em;color:#0F0F23;margin:6px 0 18px}
-.options{display:flex;flex-direction:column;gap:12px}
-.option{position:relative;width:100%;text-align:left;background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:16px 18px 16px 24px;cursor:pointer;transition:all.18s ease}
-.option::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:var(--purple);border-radius:16px 0 0 16px;transition:width.2s ease}
-.option:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(0,0,0,0.08);border-color:#DDD6FE}
-.option.selected{border-color:var(--purple);background:#F5F3FF}
-.option.selected::before{width:4px}
-.option-main{font-weight:700;font-size:16px;color:#111827;display:block}
-.option-sub{font-size:14px;color:#6B7280;margin-top:3px;display:block}
-.result{opacity:0;transform:translateY(8px)}
-.result.show{opacity:1;transform:none;transition:opacity.45s ease, transform.45s ease}
-.green-pill{display:flex;align-items:center;justify-content:center;gap:6px;width:fit-content;background:#ECFDF5;color:#065F46;border:1px solid #A7F3D0;padding:7px 13px;border-radius:999px;font-size:13px;font-weight:800;margin:0 auto 18px}
-.product-visual{width:128px;height:128px;margin:0 auto;border-radius:16px;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,0.10);border:1px solid #E5E7EB}
-.product-name{font-size:28px;font-weight:800;letter-spacing:-0.02em;text-align:center;margin:18px 0 6px;color:#0F0F23}
-.price-row{display:flex;align-items:center;justify-content:center;gap:8px}
-.price{font-size:24px;font-weight:800;color:#D97706;letter-spacing:-0.01em}
-.prime-badge{background:var(--green);color:#fff;font-size:12px;font-weight:800;padding:4px 9px;border-radius:999px;display:inline-flex;align-items:center;gap:4px}
-.benefits{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-direction:column;gap:12px}
-.benefits li{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#1F2937;line-height:1.45}
-.check{flex:0 0 22px;width:22px;height:22px;border-radius:50%;background:#D1FAE5;display:flex;align-items:center;justify-content:center}
-.cta{width:100%;height:52px;border-radius:16px;background:linear-gradient(180deg,var(--amber1),var(--amber2));color:#fff;font-weight:800;font-size:17px;letter-spacing:-0.01em;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;margin-top:22px;box-shadow:0 12px 28px rgba(217,119,6,0.36), 0 2px 5px rgba(0,0,0,0.12);text-decoration:none;transition:transform.12s ease}
-.cta:active{transform:scale(0.985)}
-.cta.pulse{animation:pulse 1.3s ease}
-@keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 12px 28px rgba(217,119,6,0.36)}50%{transform:scale(1.015);box-shadow:0 16px 36px rgba(217,119,6,0.48)}}
-.cta-sub{text-align:center;font-size:13px;color:#6B7280;margin:10px 0 0}
-details.why{margin-top:20px;border-top:1px solid #E5E7EB;padding-top:14px}
-details.why summary{font-weight:700;color:#374151;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;font-size:15px}
-details.why summary::-webkit-details-marker{display:none}
-details.why summary::after{content:'›';transform:rotate(90deg);font-size:22px;color:#9CA3AF;transition:transform.2s}
-details[open].why summary::after{transform:rotate(-90deg)}
-.why-content{font-size:14px;color:#4B5563;line-height:1.6;margin-top:10px}
-.trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px;padding-top:16px;border-top:1px solid #E5E7EB}
-.trust-item{text-align:center}
-.trust-icon{width:32px;height:32px;margin:0 auto 5px;border-radius:10px;background:#F3F4F6;display:flex;align-items:center;justify-content:center;color:#6B7280}
-.trust-label{font-size:12px;color:#6B7280;font-weight:600}
-.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:12px 14px calc(12px + env(safe-area-inset-bottom));background:rgba(15,15,35,0.92);backdrop-filter:blur(14px);border-top:1px solid rgba(255,255,255,0.08);transform:translateY(120%);transition:transform.28s ease}
-.sticky-cta.show{transform:none}
-.hidden{display:none}
-@media (max-width:640px){.hero h1{font-size:36px}.card{padding:22px}}
+  :root{
+    --bg-900:#0F0F23; --bg-800:#1E1B4E; --bg-700:#5B21B6;
+    --glass:rgba(255,255,255,0.06); --glass-2:rgba(255,255,255,0.08);
+    --border:rgba(255,255,255,0.12); --border-2:rgba(255,255,255,0.18);
+    --text:#E8E9F3; --text-2:#C7C9D9; --muted:#9A9CB2;
+    --purple-200:#DDD6FE; --purple-300:#C4B5FD; --purple-400:#A78BFA; --purple-500:#8B5CF6; --purple-600:#7C3AED;
+    --green:#10B981; --amber:#F59E0B;
+    --shadow-1:0 10px 30px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.25);
+    --shadow-2:0 20px 60px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.06);
+    --radius:24px; --radius-sm:16px; --radius-xs:12px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{height:100%}
+  body{
+    margin:0; font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    color:var(--text); background:linear-gradient(180deg,var(--bg-900) 0%, var(--bg-800) 38%, var(--bg-700) 100%);
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    line-height:1.5;
+  }
+  body::before{
+    content:""; position:fixed; inset:0; z-index:0;
+    background:radial-gradient(800px 400px at 80% -10%, rgba(139,92,246,0.25), transparent 60%),
+               radial-gradient(600px 300px at 10% 0%, rgba(99,102,241,0.18), transparent 60%);
+    pointer-events:none;
+  }
+  .noise{position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.035; mix-blend-mode:soft-light;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  a{color:inherit; text-decoration:none}
+  img{max-width:100%; display:block}
+  .container{width:100%; max-width:1140px; margin:0 auto; padding:0 24px; position:relative; z-index:2}
+  :focus-visible{outline:2px solid var(--purple-400); outline-offset:3px; border-radius:8px}
+
+  /* Header */
+  .header{position:fixed; top:0; left:0; right:0; z-index:50; transition:all .3s ease; border-bottom:1px solid transparent;}
+  .header .inner{display:flex; align-items:center; justify-content:space-between; height:72px;}
+  .header.scrolled{background:rgba(15,15,35,0.65); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border-bottom-color:rgba(255,255,255,0.08);}
+  .logo{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:-0.02em; font-size:20px}
+  .logo-mark{width:32px; height:32px; border-radius:10px; background:linear-gradient(135deg, var(--purple-500), #4F46E5); display:grid; place-items:center; box-shadow:0 8px 20px rgba(124,58,237,0.35), inset 0 1px 0 rgba(255,255,255,0.2)}
+  .logo-mark svg{width:18px; height:18px; color:white}
+  .nav{display:flex; gap:28px; align-items:center}
+  .nav a{color:var(--text-2); font-weight:500; font-size:15px; transition:color .2s}
+  .nav a:hover{color:white}
+
+  /* Hero */
+  .hero{padding:160px 0 48px; text-align:center; position:relative; z-index:2}
+  .eyebrow{display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; background:var(--glass); border:1px solid var(--border); backdrop-filter:blur(40px); -webkit-backdrop-filter:blur(40px); font-size:13px; color:var(--text-2); box-shadow:var(--shadow-1)}
+  .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--green); box-shadow:0 0 12px var(--green)}
+  h1{font-size:clamp(40px,6vw,72px); line-height:1.05; letter-spacing:-0.03em; margin:24px auto 16px; font-weight:800; max-width:900px}
+  .grad{background:linear-gradient(90deg,#fff 0%, #E9D5FF 40%, #C4B5FD 70%, #A78BFA 100%); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .sub{font-size:clamp(17px,2.2vw,20px); color:var(--text-2); max-width:720px; margin:0 auto 24px}
+  .trust-row{display:flex; flex-wrap:wrap; gap:18px; justify-content:center; margin-top:20px; color:var(--muted); font-size:14px}
+  .trust-row span{display:inline-flex; align-items:center; gap:6px}
+  .trust-row svg{width:16px; height:16px; color:var(--purple-300)}
+
+  /* Quiz */
+  .quiz-wrap{margin:56px auto 0; max-width:760px; position:relative}
+  .quiz-card{background:var(--glass); border:1px solid var(--border); backdrop-filter:blur(40px); -webkit-backdrop-filter:blur(40px); border-radius:var(--radius); box-shadow:var(--shadow-2); padding:32px; position:relative; overflow:hidden}
+  .quiz-card::before{content:""; position:absolute; inset:-1px; border-radius:inherit; padding:1px; background:linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.04)); -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude; pointer-events:none}
+  .quiz-head{display:flex; align-items:center; justify-content:space-between; margin-bottom:24px}
+  .quiz-title{font-weight:700; font-size:18px; display:flex; align-items:center; gap:10px}
+  .pill{font-size:12px; padding:6px 10px; border-radius:999px; background:rgba(167,139,250,0.15); color:#E9D5FF; border:1px solid rgba(167,139,250,0.3)}
+  .progress{height:6px; background:rgba(255,255,255,0.08); border-radius:999px; overflow:hidden; position:relative}
+  .progress-bar{height:100%; width:33%; background:linear-gradient(90deg, var(--purple-600), var(--purple-400)); border-radius:999px; transition:width .5s cubic-bezier(.2,.8,.2,1); position:relative; overflow:hidden}
+  .progress-bar::after{content:""; position:absolute; inset:0; background:linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); transform:translateX(-100%); animation:shimmer 2s infinite}
+  @keyframes shimmer{100%{transform:translateX(200%)}}
+
+  .step{margin-top:28px}
+  .step h3{font-size:24px; margin:0 0 4px; letter-spacing:-0.01em}
+  .step p{margin:0 0 20px; color:var(--muted); font-size:15px}
+  .options{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+  @media(max-width:720px){.options{grid-template-columns:1fr}}
+  .opt{position:relative; padding:18px; border-radius:16px; background:rgba(255,255,255,0.08); border:1px solid var(--border); cursor:pointer; transition:all .2s ease; text-align:left; display:flex; align-items:center; gap:14px; min-height:72px}
+  .opt:hover{transform:translateY(-2px); background:rgba(255,255,255,0.12); border-color:var(--border-2); box-shadow:0 10px 24px rgba(0,0,0,0.25)}
+  .opt:active{transform:translateY(0) scale(.99)}
+  .opt.selected{outline:2px solid var(--purple-400); background:rgba(139,92,246,0.18)}
+  .opt-icon{width:40px; height:40px; border-radius:12px; display:grid; place-items:center; background:rgba(255,255,255,0.1); border:1px solid var(--border); flex-shrink:0}
+  .opt-icon svg{width:22px; height:22px; color:#fff}
+  .opt-label{font-weight:700; color:#fff; font-size:16px}
+  .opt-sub{font-size:13px; color:rgba(255,255,255,0.8); margin-top:2px}
+
+  .result{margin-top:8px}
+  .result-card{display:grid; grid-template-columns:120px 1fr; gap:24px; align-items:center; padding:24px; background:rgba(0,0,0,0.2); border:1px solid var(--border); border-radius:20px}
+  @media(max-width:560px){.result-card{grid-template-columns:1fr; text-align:center}}
+  .result-img{width:120px; height:120px; border-radius:16px; background:#0b18; border:1px solid var(--border); display:grid; place-items:center; overflow:hidden; margin:0 auto}
+  .result-img img{width:100%; height:100%; object-fit:cover}
+  .result-badge{display:inline-flex; gap:6px; align-items:center; font-size:12px; padding:6px 10px; border-radius:999px; background:rgba(16,185,129,0.15); color:#A7F3D0; border:1px solid rgba(16,185,129,0.3); margin-bottom:10px}
+  .result h4{font-size:22px; margin:0 0 6px; letter-spacing:-0.01em}
+  .result p{margin:0 0 14px; color:var(--text-2)}
+  .price-row{display:flex; align-items:center; gap:12px; margin-bottom:16px; flex-wrap:wrap}
+  @media(max-width:560px){.price-row{justify-content:center}}
+  .price{font-weight:800; font-size:22px}
+  .prime{font-size:12px; color:#A7F3D0; display:inline-flex; align-items:center; gap:4px}
+  .cta{display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:14px 22px; border-radius:14px; font-weight:700; background:linear-gradient(180deg,#8B5CF6,#6D28D9); color:white; border:1px solid rgba(255,255,255,0.18); box-shadow:0 12px 30px rgba(124,58,237,0.4), inset 0 1px 0 rgba(255,255,255,0.2); transition:transform .15s ease, box-shadow .2s}
+  .cta:hover{transform:translateY(-1px); box-shadow:0 16px 36px rgba(124,58,237,0.5), inset 0 1px 0 rgba(255,255,255,0.2)}
+  .cta:active{transform:translateY(0) scale(.98)}
+  .cta.pulse{animation:pulse 2.2s infinite}
+  .ghost{display:inline-flex; align-items:center; justify-content:center; gap:8px; width:100%; margin-top:12px; padding:12px 18px; border-radius:12px; font-weight:600; font-size:14px; background:transparent; color:var(--text-2); border:1px solid var(--border); transition:all .2s ease; cursor:pointer}
+  .ghost:hover{background:rgba(255,255,255,0.06); color:white; border-color:var(--border-2); transform:translateY(-1px)}
+  .ghost:active{transform:translateY(0)}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(139,92,246,0.5),0 12px 30px rgba(124,58,237,0.4)}50%{box-shadow:0 0 0 10px rgba(139,92,246,0),0 12px 30px rgba(124,58,237,0.4)}}
+
+  /* Guides */
+  .section{padding:88px 0; position:relative; z-index:2}
+  .section-head{max-width:760px; margin:0 auto 40px; text-align:center}
+  .section-kicker{font-size:13px; text-transform:uppercase; letter-spacing:.12em; color:var(--purple-300); font-weight:700; margin-bottom:10px}
+  .section h2{font-size:clamp(28px,4vw,40px); letter-spacing:-0.02em; margin:0 0 12px}
+  .section p.sub{color:var(--muted); margin:0}
+  .guides{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; max-width:1100px; margin:40px auto 0}
+  @media(max-width:960px){.guides{grid-template-columns:1fr 1fr}}
+  @media(max-width:680px){.guides{grid-template-columns:1fr}}
+  .guide{position:relative; padding:24px; border-radius:20px; background:var(--glass); border:1px solid var(--border); backdrop-filter:blur(30px); -webkit-backdrop-filter:blur(30px); transition:all .25s ease; overflow:hidden; display:flex; flex-direction:column; min-height:260px}
+  .guide:hover{transform:translateY(-4px); border-color:rgba(167,139,250,0.4); box-shadow:0 20px 50px rgba(0,0,0,0.4), 0 0 40px rgba(124,58,237,0.18)}
+  .guide-top{display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16px}
+  .guide-icon{width:44px; height:44px; border-radius:12px; display:grid; place-items:center; background:linear-gradient(135deg, rgba(139,92,246,0.25), rgba(79,70,229,0.25)); border:1px solid rgba(167,139,250,0.3)}
+  .guide-icon svg{width:24px; height:24px; color:var(--purple-200)}
+  .guide-pill{font-size:11px; padding:5px 9px; border-radius:999px; background:rgba(255,255,255,0.08); border:1px solid var(--border); color:var(--text-2); font-weight:600}
+  .guide-pill.new{background:rgba(16,185,129,0.15); color:#A7F3D0; border-color:rgba(16,185,129,0.3)}
+  .guide h3{font-size:19px; margin:0 0 8px; letter-spacing:-0.01em}
+  .guide p{margin:0 0 18px; color:var(--text-2); font-size:14.5px; line-height:1.55}
+  .guide-meta{margin-top:auto; display:flex; align-items:center; justify-content:space-between; font-size:13px; color:var(--muted); padding-top:14px; border-top:1px solid rgba(255,255,255,0.08)}
+  .guide.soon{opacity:.72}
+  .guide.soon .guide-content{filter:blur(3px); user-select:none; pointer-events:none}
+  .guide.soon::after{content:"Coming Soon"; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); padding:8px 14px; border-radius:999px; background:rgba(15,15,35,0.8); border:1px solid var(--border); font-weight:700; font-size:13px; letter-spacing:.02em; backdrop-filter:blur(10px)}
+  .view-all{display:inline-flex; align-items:center; gap:8px; margin:28px auto 0; color:var(--text-2); font-weight:600; padding:10px 16px; border-radius:999px; border:1px solid var(--border); background:rgba(255,255,255,0.04); transition:all .2s}
+  .view-all:hover{color:white; background:rgba(255,255,255,0.08); transform:translateY(-1px)}
+
+  .mid-cta{text-align:center; margin-top:48px; padding:24px; border-radius:20px; background:rgba(0,0,0,0.2); border:1px dashed var(--border)}
+  .mid-cta a{color:var(--purple-300); font-weight:700; text-decoration:underline; text-underline-offset:3px}
+
+  /* Trust */
+  .trust-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; max-width:900px; margin:0 auto}
+  @media(max-width:760px){.trust-grid{grid-template-columns:1fr}}
+  .trust-item{display:flex; gap:14px; align-items:flex-start; padding:20px; border-radius:16px; background:rgba(255,255,255,0.04); border:1px solid var(--border)}
+  .trust-item svg{width:22px; height:22px; color:var(--purple-300); flex-shrink:0; margin-top:2px}
+  .trust-item strong{display:block; font-weight:700; margin-bottom:4px}
+  .trust-item span{color:var(--muted); font-size:14px}
+
+  /* Footer */
+  footer{position:relative; z-index:2; margin-top:80px; border-top:1px solid rgba(255,255,255,0.08); background:linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.35))}
+  .foot-inner{padding:56px 0 32px; display:grid; grid-template-columns:2fr 1fr 1fr; gap:40px}
+  @media(max-width:900px){.foot-inner{grid-template-columns:1fr 1fr; gap:32px}}
+  @media(max-width:560px){.foot-inner{grid-template-columns:1fr}}
+  .foot-brand p{color:var(--muted); font-size:14px; margin:12px 0 0; max-width:320px}
+  .foot-col h5{font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--text-2); margin:0 0 14px}
+  .foot-col a{display:block; color:var(--muted); font-size:14px; padding:6px 0; transition:color .2s}
+  .foot-col a:hover{color:white}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,0.08); padding:20px 0; display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; align-items:center; color:var(--muted); font-size:13px}
+  .disclosure{max-width:900px; margin:24px auto 0; padding:16px; border-radius:12px; background:rgba(255,255,255,0.04); border:1px solid var(--border); color:var(--muted); font-size:12.5px; line-height:1.6; text-align:center}
+
+  /* Sticky CTA */
+  .sticky-cta{position:fixed; left:50%; transform:translateX(-50%) translateY(120%); bottom:20px; z-index:60; transition:transform .4s cubic-bezier(.2,.8,.2,1); width:calc(100% - 32px); max-width:520px}
+  .sticky-cta.visible{transform:translateX(-50%) translateY(0)}
+  .sticky-inner{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 14px 12px 16px; border-radius:16px; background:rgba(20,16,45,0.85); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid var(--border); box-shadow:0 20px 40px rgba(0,0,0,0.5)}
+  .sticky-text{font-weight:600; font-size:14px}
+  .sticky-text small{display:block; color:var(--muted); font-weight:500; font-size:12px}
+  .sticky-btn{white-space:nowrap; padding:10px 16px; border-radius:12px; background:linear-gradient(180deg,#8B5CF6,#6D28D9); color:white; font-weight:700; font-size:14px; border:1px solid rgba(255,255,255,0.18)}
+@media (max-width: 640px){.hero{padding:80px 0 24px !important} h1{font-size:34px !important;margin:16px auto 12px !important} .sub{font-size:16px !important;margin-bottom:16px !important} .trust-row{margin-top:12px !important;gap:12px} .quiz-wrap{margin-top:32px !important}}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Organization",
+      "@id":"https://parentpick.co.uk/#org",
+      "name":"ParentPick",
+      "url":"https://parentpick.co.uk/",
+      "logo":{"@type":"ImageObject","url":"https://parentpick.co.uk/logo.png"},
+      "sameAs":[]
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://parentpick.co.uk/#website",
+      "url":"https://parentpick.co.uk/",
+      "name":"ParentPick",
+      "publisher":{"@id":"https://parentpick.co.uk/#org"},
+      "inLanguage":"en-GB",
+      "potentialAction":{"@type":"SearchAction","target":"https://parentpick.co.uk/?q={search_term_string}","query-input":"required name=search_term_string"}
+    },
+    {
+      "@type":"FAQPage",
+      "@id":"https://parentpick.co.uk/#faq",
+      "mainEntity":[
+        {"@type":"Question","name":"Are ParentPick recommendations NHS-aligned?","acceptedAnswer":{"@type":"Answer","text":"Yes. We reference NHS and Lullaby Trust safe sleep guidance. We never recommend unsafe sleep positioners, weighted products, or anything that goes against current UK guidance."}},
+        {"@type":"Question","name":"Do you earn money from links?","acceptedAnswer":{"@type":"Answer","text":"Yes. ParentPick is an Amazon Associate. We earn from qualifying purchases at no extra cost to you. We only recommend products UK parents actually use and love."}},
+        {"@type":"Question","name":"How does the 2-tap quiz work?","acceptedAnswer":{"@type":"Answer","text":"Choose your baby's age, then their biggest sleep struggle. We match you to one proven product — swaddle, sleep sack, white noise, or blackout blind — based on thousands of UK parent reviews."}}
+      ]
+    },
+    {
+      "@type":"ItemList",
+      "@id":"https://parentpick.co.uk/#guides",
+      "name":"Expert Parent Guides",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"url":"https://parentpick.co.uk/posts/safe-sleep-0-6-months.html","name":"Safe Sleep Checklist (0-6 Months)"},
+        {"@type":"ListItem","position":2,"name":"TOG Ratings Made Simple"},
+        {"@type":"ListItem","position":3,"name":"White Noise: How Loud Is Safe?"}
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
-<div class="page"> <header class="hero"> <h1>You're up. Here's what works.</h1> <p>2 taps. Practical help for tired UK parents.</p> <div class="trust-pill">Free tool, no signup, made for UK parents</div> </header> <div class="card-wrap"> <main class="card" id="card"> <div class="progress"><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div><div class="progress-dots"><div class="dot active" id="dot1">1</div><div class="dot" id="dot2">2</div><div class="dot" id="dot3">✓</div></div></div> <section id="step1"><h2 class="step-title">How old?</h2><div class="options"><button class="option" data-age="0-3"><span class="option-main">0–3 months</span><span class="option-sub">Startle reflex strong</span></button><button class="option" data-age="3-6"><span class="option-main">3–6 months</span><span class="option-sub">Sleep cycles maturing</span></button><button class="option" data-age="6-12"><span class="option-main">6–12 months</span><span class="option-sub">Rolling and sitting</span></button></div></section> <section id="step2" class="hidden"><h2 class="step-title">Biggest struggle?</h2><div class="options"><button class="option" data-struggle="hourly"><span class="option-main">Waking hourly</span><span class="option-sub">Won't link cycles</span></button><button class="option" data-struggle="settle"><span class="option-main">Won't settle</span><span class="option-sub">Startle wakes them</span></button><button class="option" data-struggle="early"><span class="option-main">Up at 4–5am</span><span class="option-sub">Early sunrise</span></button></div></section> <section id="result" class="result hidden"><div class="green-pill">✓ Matched to your answers</div><div class="product-visual"><img fetchpriority="high" id="productImage" src="" alt="Recommended product" style="width:100%;height:100%;object-fit:contain;padding:8px;"></div><h3 class="product-name" id="productName"></h3><div class="price-row"><div class="price" id="productPrice"></div><div class="prime-badge">✓ Prime</div></div><a id="ctaMain" class="cta" href="#" target="_blank" rel="nofollow noopener">Sleep tonight — Buy on Amazon</a><p class="cta-sub">Arrives tomorrow • Free returns • </p><ul class="benefits" id="benefitsList"></ul><details class="why"><summary>Why this works</summary><div class="why-content" id="whyContent"></div></details><div class="trust-row"><div class="trust-item"><div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 4v5c0 5-3 9-7 9s-7-4-7-9V7l7-4z" stroke="currentColor" stroke-width="1.7" fill="none"/></svg></div><div class="trust-label">NHS guidance</div></div><div class="trust-item"><div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M7 8h10l1 8H6l1-8zm-1-2l-1-4h14l-1 4M11 12v4m4-4v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><div class="trust-label">30-day returns</div></div><div class="trust-item"><div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><div class="trust-label">1yr warranty</div></div></div></section> </main> </div>
-</div>
-<div class="sticky-cta" id="stickyCta"><a id="ctaSticky" class="cta" href="#" target="_blank" rel="nofollow noopener">Sleep tonight — Buy on Amazon</a></div>
-<script>
-const step1=document.getElementById('step1');const step2=document.getElementById('step2');const result=document.getElementById('result');const progressFill=document.getElementById('progressFill');const dot1=document.getElementById('dot1');const dot2=document.getElementById('dot2');const dot3=document.getElementById('dot3');const card=document.getElementById('card');const sticky=document.getElementById('stickyCta');let state={age:null,struggle:null};let resultShown=false;
-const products={ swaddle:{image:"https://m.media-amazon.com/images/I/51LEUxUmO4L._AC_SL1228_.jpg",name:"Love to Dream Swaddle UP 1.0 Tog",price:"£27.99",link:"https://amzn.to/47VrrnA",benefits:["Arms-up calms startle reflex — NHS safe","1.0 tog keeps 20-24°C perfect","Double zip — nappy change without waking"],why:"NHS guidance: no loose blankets under 12 months. Swaddle UP gives secure, breathable warmth and lets baby self-soothe hands-to-mouth. helps many parents settle baby more easily."}, sleepsack:{image:"https://m.media-amazon.com/images/I/514ZrAqVRrL._AC_SL1500_.jpg",name:"Tommee Tippee Grobag Hip-Healthy Cotton-Rich Sleep Bag (Aloe-Infused) 2.5 Tog",price:"£35.99 - £45.99",link:"https://amzn.to/4sqq7QT",benefits:["2.5 tog for 16–20°C — ideal room temperature range","Hip-healthy design — supports natural leg position","Aloe-infused cotton-rich fabric — gentle on baby’s skin"],why:"Designed for safer sleep with breathable, skin-friendly fabric and hip-healthy support. Keeps baby at a consistent temperature all night without loose blankets."}, dreamegg:{image:"https://m.media-amazon.com/images/I/71ypHn4zUyL._AC_SL1500_.jpg",name:"Dreamegg D11 White Noise Machine",price:"£27.40",link:"https://amzn.to/3PYNNyk",benefits:["Masks startle reflex — links sleep cycles","Continuous sound, no loop gaps","NHS safe volume at 50dB max"],why:"After safe sleep sorted, continuous white noise mimics womb sound, reducing cortisol so babies link 45-min cycles."}, ewan:{image:"https://m.media-amazon.com/images/I/61Nac0FEQaL._AC_SL1045_.jpg",name:"Ewan Deluxe Baby Soother",price:"£44.99",link:"https://amzn.to/4snXjs6",benefits:["Womb shush settles in under 3 minutes","SmartCry restarts automatically","Pink noise calms startle reflex"],why:"Ewan's pink noise and heartbeat replicate the womb. SmartCry means you stay in bed. Popular with UK parents."}, gro:{image:"https://m.media-amazon.com/images/I/71PpsEnVvEL._AC_SL1500_.jpg",name:"Sleeptight Portable Blackout Blind",price:"£22.45",link:"https://amzn.to/3Or3z4B",benefits:["Blocks 99% light — stops 4am wake","Keeps room cooler, 16-20°C","Super easy to fit"],why:"Early waking is light-triggered melatonin drop. Total blackout until 7am protects sleep cycles."}
-};
-function chooseProduct(age,struggle){ if(age==='0-3'&&struggle==='hourly')return products.swaddle; if(age==='0-3'&&struggle==='settle')return products.swaddle; if(age==='0-3'&&struggle==='early')return products.swaddle; if(age==='3-6'&&struggle==='hourly')return products.sleepsack; if(age==='3-6'&&struggle==='settle')return products.dreamegg; if(age==='3-6'&&struggle==='early')return products.gro; if(age==='6-12'&&struggle==='hourly')return products.sleepsack; if(age==='6-12'&&struggle==='settle')return products.ewan; if(age==='6-12'&&struggle==='early')return products.gro; return products.swaddle;
-}
-function updateProgress(step){if(step===1){progressFill.style.width='33.3%';dot1.classList.add('active');dot2.classList.remove('active');dot3.classList.remove('active')}if(step===2){progressFill.style.width='66.6%';dot2.classList.add('active')}if(step===3){progressFill.style.width='100%';dot3.classList.add('active')}}
-step1.querySelectorAll('.option').forEach(btn=>{btn.addEventListener('click',()=>{step1.querySelectorAll('.option').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected');state.age=btn.dataset.age;setTimeout(()=>{step1.classList.add('hidden');step2.classList.remove('hidden');updateProgress(2);window.scrollTo({top:0,behavior:'smooth'})},180)})});
-step2.querySelectorAll('.option').forEach(btn=>{btn.addEventListener('click',()=>{step2.querySelectorAll('.option').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected');state.struggle=btn.dataset.struggle;setTimeout(showResult,180)})});
-function showResult(){const product=chooseProduct(state.age,state.struggle);document.getElementById('productName').textContent=product.name;document.getElementById('productPrice').textContent=product.price;document.getElementById('whyContent').textContent=product.why;const productImage=document.getElementById('productImage');productImage.alt=product.name;productImage.src=product.image&&product.image!=="PASTE_AMAZON_IMAGE_URL_HERE"?product.image:"";const benefitsList=document.getElementById('benefitsList');benefitsList.innerHTML=product.benefits.map(b=>`<li><span class="check"><svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M5 10l3.5 3.5L15 7" stroke="#059669" stroke-width="2.4" stroke-linecap="round"/></svg></span>${b}</li>`).join('');const ctaMain=document.getElementById('ctaMain');const ctaSticky=document.getElementById('ctaSticky');ctaMain.href=product.link;ctaSticky.href=product.link;step2.classList.add('hidden');result.classList.remove('hidden');requestAnimationFrame(()=>result.classList.add('show'));updateProgress(3);resultShown=true;setTimeout(()=>ctaMain.classList.add('pulse'),2000);setTimeout(()=>ctaMain.classList.remove('pulse'),3300);window.scrollTo({top:0,behavior:'smooth'})}
-if(!window.matchMedia('(pointer:coarse)').matches){card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();const x=e.clientX-r.left;const y=e.clientY-r.top;const rx=((y-r.height/2)/r.height)*-5;const ry=((x-r.width/2)/r.width)*5;card.style.transform=`rotateX(${rx}deg) rotateY(${ry}deg)`});card.addEventListener('mouseleave',()=>{card.style.transform='rotateX(0) rotateY(0)'})}
-window.addEventListener('scroll',()=>{if(!resultShown)return;if(window.scrollY>120){sticky.classList.add('show')}else{sticky.classList.remove('show')}});updateProgress(1);
-</script>
+<div class="noise" aria-hidden="true"></div>
 
-<footer style="text-align:center; padding:40px 16px 20px; color:rgba(255,255,255,0.7); font-size:14px;">
-  <div style="max-width:480px; margin:0 auto;">
-    <p style="margin:0 0 8px;">ParentPick is a free tool. Some links are affiliate links.</p>
-    <p style="margin:0;">
-      <a href="/about.html" style="color:rgba(255,255,255,0.9); text-decoration:underline;">About</a> | 
-      <a href="/disclosure.html" style="color:rgba(255,255,255,0.9); text-decoration:underline;">Affiliate Disclosure</a> | 
-      <a href="mailto:hello@parentpick.co.uk" style="color:rgba(255,255,255,0.9); text-decoration:underline;">Contact</a>
-    </p>
+<header class="header" id="siteHeader">
+  <div class="container inner">
+    <a href="/" class="logo" aria-label="ParentPick home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </span>
+      ParentPick
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#guides">Guides</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow"><span class="dot"></span> NHS guidance referenced • Updated April 2026</div>
+      <h1>You're up. <span class="grad">Here's what works.</span></h1>
+      <p class="sub">The 2-tap quiz for exhausted UK parents. Get one NHS-aligned product pick — not a list of 20. No signup, no spam.</p>
+      <div class="trust-row" aria-label="Trust signals">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> tired UK parents</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> No signup</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> NHS-aligned</span>
+      </div>
+
+      <div class="quiz-wrap" id="quiz">
+        <div class="quiz-card">
+          <div style="text-align:center; margin-bottom:12px; font-size:12px; color:var(--muted)">As an Amazon Associate, we earn from qualifying purchases. <a href="/disclosure.html" style="text-decoration:underline; color:inherit">Learn more</a></div>
+          <div class="quiz-head">
+            <div class="quiz-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              2-Tap Sleep Finder
+            </div>
+            <span class="pill">Takes 12 seconds</span>
+          </div>
+          <div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+          <!-- Step 1 -->
+          <div class="step" id="step1" role="group" aria-label="Step 1: Age">
+            <h3>How old is your baby?</h3>
+            <p>Age changes what’s safe and what works.</p>
+            <div class="options">
+              <button class="opt" data-age="0-3" aria-label="0 to 3 months">
+                <span class="opt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 0 0-5 5c0 3 5 9 5 9s5-6 5-9a5 5 0 0 0-5-5z"/></svg></span>
+                <div><div class="opt-label">0–3 months</div><div class="opt-sub">Fourth trimester</div></div>
+              </button>
+              <button class="opt" data-age="3-6" aria-label="3 to 6 months">
+                <span class="opt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg></span>
+                <div><div class="opt-label">3–6 months</div><div class="opt-sub">Rolling & transition</div></div>
+              </button>
+              <button class="opt" data-age="6-12" aria-label="6 to 12 months">
+                <span class="opt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg></span>
+                <div><div class="opt-label">6–12 months</div><div class="opt-sub">Sitting, standing</div></div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step" id="step2" hidden role="group" aria-label="Step 2: Struggle">
+            <h3>Biggest struggle right now?</h3>
+            <p>Pick the one that’s breaking you tonight.</p>
+            <div class="options">
+              <button class="opt" data-struggle="hourly" aria-label="Waking every hour">
+                <span class="opt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="9"/></svg></span>
+                <div><div class="opt-label">Waking hourly</div><div class="opt-sub">Startles, needs resettling</div></div>
+              </button>
+              <button class="opt" data-struggle="settle" aria-label="Won't settle">
+                <span class="opt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 15c4-1 6-5 10-5s6 4 10 5"/><path d="M2 9c4-1 6-5 10-5s6 4 10 5"/></svg></span>
+                <div><div class="opt-label">Won't settle</div><div class="opt-sub">Crying at bedtime</div></div>
+              </button>
+              <button class="opt" data-struggle="early" aria-label="Early waking">
+                <span class="opt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2"/></svg></span>
+                <div><div class="opt-label">Early waking (4–5am)</div><div class="opt-sub">Light & noise sensitive</div></div>
+              </button>
+            </div>
+            <button class="ghost" id="backBtn" type="button" style="margin-top:14px;background:none;border:0;cursor:pointer">← Back</button>
+          </div>
+
+          <!-- Result -->
+          <div class="step result" id="result" hidden>
+            <div class="result-card">
+              <div class="result-img"><img id="resultImg" alt="" loading="lazy"></div>
+              <div>
+                <span class="result-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> ParentPick #1 for you</span>
+                <h4 id="resultName">Product Name</h4>
+                <p id="resultWhy">Why this works for your age & struggle.</p>
+                <div class="price-row">
+                  <span class="price" id="resultPrice">£—</span>
+                  <span class="prime"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4 2 7-6.5-4.5L5.5 20l2-7L2 9h7z"/></svg> Check Amazon</span>
+                </div>
+                <a id="resultLink" class="cta pulse" target="_blank" rel="nofollow sponsored noopener" aria-label="View on Amazon">View on Amazon
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7m10 0v10"/></svg>
+                </a>
+                <p style="text-align:center; font-size:12px; color:var(--muted); margin:8px 0 0">Price shown is from Amazon UK. Check Amazon for current price.</p>
+                <button class="ghost" id="retakeBtn" type="button">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="M9 9h6v6"/></svg>
+                  Start again
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="guides">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Learn</div>
+        <h2>Expert Parent Guides</h2>
+        <p class="sub">Evidence-based checklists. No fluff. Updated monthly.</p>
+      </div>
+
+      <div class="guides">
+        <!-- Card 1 LIVE -->
+        <a class="guide" href="/posts/safe-sleep-0-6-months.html">
+          <div class="guide-top">
+            <span class="guide-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M7 8V6a5 5 0 0 1 10 0v2"/><circle cx="12" cy="14" r="2"/></svg>
+            </span>
+            <span class="guide-pill new">NEW • NHS-ALIGNED</span>
+          </div>
+          <div class="guide-content">
+            <h3>Safe Sleep Checklist (0–6 Months)</h3>
+            <p>The Lullaby Trust & NHS guidance distilled into a 2-minute checklist. Room temp, position, what NOT to buy.</p>
+          </div>
+          <div class="guide-meta">
+            <span>5 min read</span>
+            <span>Updated 15 Apr 2026</span>
+          </div>
+        </a>
+
+        <!-- Card 2 Soon -->
+        <div class="guide soon" aria-disabled="true">
+          <div class="guide-top">
+            <span class="guide-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M8 7h8M6 11h12M8 15h8M6 19h12"/></svg>
+            </span>
+            <span class="guide-pill">Coming Soon</span>
+          </div>
+          <div class="guide-content">
+            <h3>TOG Ratings Made Simple</h3>
+            <p>Stop guessing. The exact TOG for UK room temps, plus what to wear underneath by season.</p>
+          </div>
+          <div class="guide-meta"><span>4 min read</span><span>Drafting</span></div>
+        </div>
+
+        <!-- Card 3 Soon -->
+        <div class="guide soon" aria-disabled="true">
+          <div class="guide-top">
+            <span class="guide-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 10c3 0 5-2 7-2s4 2 7 2 5-2 7-2M2 14c3 0 5 2 7 2s4-2 7-2 5 2 7 2M2 18c3 0 5-2 7-2s4 2 7 2"/></svg>
+            </span>
+            <span class="guide-pill">Coming Soon</span>
+          </div>
+          <div class="guide-content">
+            <h3>White Noise: How Loud Is Safe?</h3>
+            <p>Decibel limits, best placement, and when to wean — based on paediatric audiology guidance.</p>
+          </div>
+          <div class="guide-meta"><span>6 min read</span><span>Drafting</span></div>
+        </div>
+      </div>
+
+      <div style="text-align:center">
+        <a href="/guides.html" class="view-all">View all guides <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+
+      <div class="mid-cta">
+        Not sure where to start? <a href="#quiz">Take the 2-tap quiz ↑</a> — we’ll match you in 12 seconds.
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:24px">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          <div><strong>NHS Guidance Referenced</strong><span>Every recommendation cross-checked with Lullaby Trust & NHS safe sleep.</span></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          <div><strong>Independent Recommendations</strong><span>We only suggest products UK parents actually use. No sponsored placements.</span></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <div><strong>Secure Checkout on Amazon</strong><span>You buy direct from Amazon. They handle delivery, returns & customer service.</span></div>
+        </div>
+      </div>
+
+      <div class="disclosure">
+        <strong>Affiliate disclosure:</strong> ParentPick is a participant in the Amazon EU Associates Programme, an affiliate advertising programme designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.co.uk. As an Amazon Associate we earn from qualifying purchases. We only recommend products we’d buy for our own babies.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-brand">
+        <a href="/" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>ParentPick</a>
+        <p>Calm, premium, NHS-aligned baby sleep picks for tired UK parents. Built by parents, checked against NHS guidance.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Guides</h5>
+        <a href="/posts/safe-sleep-0-6-months.html">Safe Sleep Checklist</a>
+        <a href="/guides.html">All Guides</a>
+        <a href="/guides.html#togs">TOG Guide (soon)</a>
+        <a href="/guides.html#whitenoise">White Noise (soon)</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="/about.html">About</a>
+        <a href="mailto:hello@parentpick.co.uk">Contact</a>
+        </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/cookies.html">Cookies</a>
+        <a href="/disclosure.html">Affiliate Disclosure</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 ParentPick.co.uk — Made in the UK for tired parents</span>
+      <span>NHS & Lullaby Trust guidance referenced. Not medical advice.</span>
+    </div>
   </div>
 </footer>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B76RM2NRLY"></script>
+<!-- Sticky Bottom CTA -->
+<div class="sticky-cta" id="stickyCta" aria-live="polite">
+  <div class="sticky-inner">
+    <div class="sticky-text">
+      <span id="stickyName">Your pick ready</span>
+      <small id="stickyPrice">Check Amazon for price</small>
+    </div>
+    <a id="stickyLink" class="sticky-btn" target="_blank" rel="nofollow sponsored noopener">Check price →</a>
+  </div>
+</div>
+
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-B76RM2NRLY');
+  // Header blur on scroll
+  const header = document.getElementById('siteHeader');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 10);
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Products — exact affiliate links preserved from original
+  const PRODUCTS = {
+    swaddle: {
+      id:'swaddle',
+      name:'Love to Dream Swaddle UP 1.0 Tog',
+      why:'NHS guidance: no loose blankets under 12 months. Swaddle UP gives secure, breathable warmth and lets baby self-soothe hands-to-mouth. helps many parents settle baby more easily.',
+      price:'£27.99',
+      link:'https://amzn.to/47VrrnA',
+      img:'https://m.media-amazon.com/images/I/51LEUxUmO4L._AC_SL1228_.jpg'
+    },
+    sleepsack: {
+      id:'sleepsack',
+      name:'Tommee Tippee Grobag Hip-Healthy Cotton-Rich Sleep Bag (Aloe-Infused) 2.5 Tog',
+      why:'Designed for safer sleep with breathable, skin-friendly fabric and hip-healthy support. Keeps baby at a consistent temperature all night without loose blankets.',
+      price:'£35.99 - £45.99',
+      link:'https://amzn.to/4sqq7QT',
+      img:'https://m.media-amazon.com/images/I/514ZrAqVRrL._AC_SL1500_.jpg'
+    },
+    dreamegg: {
+      id:'dreamegg',
+      name:'Dreamegg D11 White Noise Machine',
+      why:'After safe sleep sorted, continuous white noise mimics womb sound, reducing cortisol so babies link 45-min cycles.',
+      price:'£27.40',
+      link:'https://amzn.to/3PYNNyk',
+      img:'https://m.media-amazon.com/images/I/71ypHn4zUyL._AC_SL1500_.jpg'
+    },
+    ewan: {
+      id:'ewan',
+      name:'Ewan Deluxe Baby Soother',
+      why:"Ewan's pink noise and heartbeat replicate the womb. SmartCry means you stay in bed. Popular with UK parents.",
+      price:'£44.99',
+      link:'https://amzn.to/4snXjs6',
+      img:'https://m.media-amazon.com/images/I/61Nac0FEQaL._AC_SL1045_.jpg'
+    },
+    gro: {
+      id:'gro',
+      name:'Sleeptight Portable Blackout Blind',
+      why:'Early waking is light-triggered melatonin drop. Total blackout until 7am protects sleep cycles.',
+      price:'£22.45',
+      link:'https://amzn.to/3Or3z4B',
+      img:'https://m.media-amazon.com/images/I/71PpsEnVvEL._AC_SL1500_.jpg'
+    }
+  };
+
+  // Quiz logic — preserved functionality
+  const step1 = document.getElementById('step1');
+  const step2 = document.getElementById('step2');
+  const result = document.getElementById('result');
+  const progressBar = document.getElementById('progressBar');
+  const backBtn = document.getElementById('backBtn');
+  const retakeBtn = document.getElementById('retakeBtn');
+
+  let state = { age:null, struggle:null };
+
+  function setProgress(pct){ progressBar.style.width = pct + '%'; }
+
+  function chooseProduct(age, struggle){
+    // Original logic preserved exactly
+    if(age === '0-3' && struggle === 'hourly') return PRODUCTS.swaddle;
+    if(age === '0-3' && struggle === 'settle') return PRODUCTS.swaddle;
+    if(age === '0-3' && struggle === 'early') return PRODUCTS.swaddle;
+    if(age === '3-6' && struggle === 'hourly') return PRODUCTS.sleepsack;
+    if(age === '3-6' && struggle === 'settle') return PRODUCTS.dreamegg;
+    if(age === '3-6' && struggle === 'early') return PRODUCTS.gro;
+    if(age === '6-12' && struggle === 'hourly') return PRODUCTS.sleepsack;
+    if(age === '6-12' && struggle === 'settle') return PRODUCTS.ewan;
+    if(age === '6-12' && struggle === 'early') return PRODUCTS.gro;
+    return PRODUCTS.swaddle;
+  }
+
+  function showResult(product){
+    document.getElementById('resultName').textContent = product.name;
+    document.getElementById('resultWhy').textContent = product.why;
+    document.getElementById('resultPrice').textContent = product.price;
+    const img = document.getElementById('resultImg');
+    img.src = product.img; img.alt = product.name;
+    const link = document.getElementById('resultLink');
+    link.href = product.link;
+    link.setAttribute('aria-label', `View ${product.name} on Amazon for ${product.price}`);
+
+    // Sticky CTA
+    document.getElementById('stickyName').textContent = product.name;
+    document.getElementById('stickyPrice').textContent = `${product.price}`;
+    document.getElementById('stickyLink').href = product.link;
+    document.getElementById('stickyCta').classList.add('visible');
+
+    // Analytics
+    gtag('event','quiz_complete',{age:state.age, struggle:state.struggle, product:product.id});
+  }
+
+  // Age selection
+  step1.querySelectorAll('.opt').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      step1.querySelectorAll('.opt').forEach(b=>b.classList.remove('selected'));
+      btn.classList.add('selected');
+      state.age = btn.dataset.age;
+      setProgress(66);
+      step1.hidden = true;
+      step2.hidden = false;
+      gtag('event','quiz_age_select',{age:state.age});
+    });
+  });
+
+  // Struggle selection
+  step2.querySelectorAll('.opt').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      step2.querySelectorAll('.opt').forEach(b=>b.classList.remove('selected'));
+      btn.classList.add('selected');
+      state.struggle = btn.dataset.struggle;
+      setProgress(100);
+      step2.hidden = true;
+      result.hidden = false;
+      const product = chooseProduct(state.age, state.struggle);
+      showResult(product);
+      // Scroll result into view on mobile
+      if(window.innerWidth < 720){ result.scrollIntoView({behavior:'smooth', block:'center'}); }
+    });
+  });
+
+  backBtn.addEventListener('click', ()=>{
+    step2.hidden = true; step1.hidden = false; setProgress(33);
+  });
+  retakeBtn.addEventListener('click', ()=>{
+    state = {age:null,struggle:null};
+    result.hidden = true; step1.hidden = false; step2.hidden = true;
+    setProgress(33);
+    document.querySelectorAll('.opt').forEach(b=>b.classList.remove('selected'));
+    document.getElementById('stickyCta').classList.remove('visible');
+    window.scrollTo({top: document.getElementById('quiz').offsetTop - 80, behavior:'smooth'});
+  });
+
+  // Amazon click tracking
+  document.getElementById('resultLink').addEventListener('click', ()=>{
+    gtag('event','amazon_click',{product: state.age + '_' + state.struggle});
+  });
+  document.getElementById('stickyLink').addEventListener('click', ()=>{
+    gtag('event','amazon_click_sticky',{product: state.age + '_' + state.struggle});
+  });
+
+  // Init
+  setProgress(33);
 </script>
+
+<!-- Cookie Banner + GA (UK compliant) -->
+<div id="cookie-banner" style="position:fixed;bottom:20px;left:20px;right:20px;max-width:480px;margin:auto;z-index:9999;background:rgba(15,15,35,0.96);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.15);border-radius:16px;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,0.5);color:#E8E9F3;font-family:'Plus Jakarta Sans',system-ui,sans-serif;display:none">
+  <p style="margin:0 0 12px;font-size:14px;line-height:1.5"><strong>We use cookies</strong><br>We use Google Analytics to understand which guides help parents. <a href="/cookies.html" style="color:#C4B5FD;text-decoration:underline">Learn more</a></p>
+  <div style="display:flex;gap:10px">
+    <button id="cookie-accept" style="flex:1;background:#7C3AED;color:white;border:none;padding:10px;border-radius:10px;font-weight:600;cursor:pointer;font-size:14px">Accept</button>
+    <button id="cookie-reject" style="flex:1;background:rgba(255,255,255,0.1);color:#E8E9F3;border:1px solid rgba(255,255,255,0.2);padding:10px;border-radius:10px;font-weight:600;cursor:pointer;font-size:14px">Reject</button>
+  </div>
+</div>
+<script>
+(function(){
+  const banner = document.getElementById('cookie-banner');
+  const consent = localStorage.getItem('pp_cookies');
+  function loadGA(){
+    var s=document.createElement('script');
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-B76RM2NRLY';
+    s.async=true; document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js', new Date());
+    gtag('config','G-B76RM2NRLY',{'anonymize_ip':true});
+  }
+  if(!consent){banner.style.display='block';}
+  else if(consent==='accepted'){loadGA();}
+  document.getElementById('cookie-accept').onclick=function(){localStorage.setItem('pp_cookies','accepted');banner.style.display='none';loadGA();};
+  document.getElementById('cookie-reject').onclick=function(){localStorage.setItem('pp_cookies','rejected');banner.style.display='none';};
+})();
+</script>
+
 </body>
 </html>
