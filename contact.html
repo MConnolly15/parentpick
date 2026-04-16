@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact - ParentPick</title>
+<meta name="theme-color" content="#0F0F23">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg1:#0F0F23; --bg2:#1E1B4E; --bg3:#5B21B6;
+  --purple:#7C3AED; --purple-dark:#5B21B6;
+  --text:#0F172A; --muted:#475569; --card:#FFFFFF;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{
+  font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  background:linear-gradient(160deg,var(--bg1) 0%,var(--bg2) 45%,var(--bg3) 100%);
+  color:var(--text); -webkit-font-smoothing:antialiased;
+}
+.wrap{min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:64px 20px 80px}
+.header{text-align:center;margin-bottom:36px;max-width:720px}
+.header h1{color:#fff;font-size:48px;line-height:1.1;margin:0 0 12px;font-weight:700;letter-spacing:-0.02em}
+.header p{color:rgba(255,255,255,0.85);font-size:18px;margin:0}
+.card{background:var(--card);width:100%;max-width:720px;border-radius:28px;padding:56px;box-shadow:0 25px 80px rgba(0,0,0,0.4),0 0 0 1px rgba(255,255,255,0.08) inset}
+.badge{display:inline-block;background:#F5F3FF;color:var(--purple);padding:6px 12px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:16px}
+.card h2{font-size:24px;margin:0 0 12px;color:#1E1B4E;font-weight:700}
+.card p{font-size:16px;line-height:1.65;color:var(--muted);margin:0 0 16px}
+.email-block{background:#F9F7FF;border:1px solid #E9E5FF;border-radius:16px;padding:24px;display:flex;align-items:center;gap:16px;margin:20px 0 28px}
+.icon{width:48px;height:48px;border-radius:50%;background:#EDE9FE;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon svg{width:22px;height:22px;color:var(--purple)}
+.email-text a{font-size:20px;font-weight:700;color:#1E1B4E;text-decoration:none;letter-spacing:-0.01em}
+.email-text a:hover{color:var(--purple)}
+.email-text span{display:block;font-size:13px;color:var(--purple);margin-top:2px;font-weight:500}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}
+.trust-item{background:#F8FAFC;padding:12px;border-radius:10px;text-align:center;font-size:14px;color:var(--muted);font-weight:500}
+.divider{height:1px;background:#E2E8F0;margin:32px 0}
+.notice{background:#FEFCE8;border-left:4px solid #FACC15;padding:16px 20px;border-radius:8px;font-size:14px;color:#854D0E;line-height:1.5}
+.btn-row{margin-top:28px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--purple),var(--purple-dark));color:#fff;padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:600;font-size:16px;box-shadow:0 4px 14px rgba(124,58,237,0.3);transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.footer{margin-top:36px;text-align:center;color:rgba(255,255,255,0.7);font-size:14px}
+.footer a{color:#fff;text-decoration:none;margin:0 8px}
+.footer a:hover{text-decoration:underline}
+@media(max-width:640px){
+  .header h1{font-size:36px}
+  .card{padding:36px 24px;border-radius:24px}
+  .email-block{flex-direction:column;align-items:flex-start}
+  .trust{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <h1>Contact</h1>
+    <p>We'd love to hear from you</p>
+  </div>
+
+  <div class="card">
+    <span class="badge">Get in touch</span>
+    <h2>Email us directly</h2>
+    <p>For enquiries about ParentPick, please email us:</p>
+    
+    <div class="email-block">
+      <div class="icon">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+      </div>
+      <div class="email-text">
+        <a href="mailto:hello@parentpick.co.uk">hello@parentpick.co.uk</a>
+        <span>Click to email</span>
+      </div>
+    </div>
+
+    <div class="trust">
+      <div class="trust-item">Reply in 1–2 days</div>
+      <div class="trust-item">UK-based</div>
+      <div class="trust-item">Independent</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="notice">
+      <strong>Important:</strong> ParentPick provides product information only. For medical advice about your baby's sleep, please consult your GP or health visitor and follow NHS safe sleep guidance.
+    </div>
+
+    <div class="btn-row">
+      <a href="/" class="btn">← Return to ParentPick</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="/">Home</a> | <a href="/about">About</a> | <a href="/disclosure.html">Affiliate Disclosure</a> | <a href="/privacy">Privacy</a>
+    <div style="margin-top:8px">© 2026 ParentPick</div>
+  </div>
+</div>
+</body>
+</html>
