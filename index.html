@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-<script>window.Intl=window.Intl||{};Intl.t=function(s){return(Intl._locale&&Intl._locale[s])||s;};</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ParentPick.co.uk — You're up. Here's what works. | NHS-Aligned Baby Sleep Picks</title>
+<link rel="preload" as="image" href="https://m.media-amazon.com/images/I/61K6cQ5m9+L._AC_SL1500_.jpg">
+<link rel="preload" as="image" href="https://m.media-amazon.com/images/I/71Wbl7uE4JL._AC_SL1500_.jpg">
+<link rel="preload" as="image" href="https://m.media-amazon.com/images/I/61i+Jc9-8QL._AC_SL1500_.jpg">
+<link rel="preload" as="image" href="https://m.media-amazon.com/images/I/61O1lXjfR3L._AC_SL1500_.jpg">
+<link rel="preload" as="image" href="https://m.media-amazon.com/images/I/71PpsEnVvEL._AC_SL1500_.jpg">
+
 <meta name="description" content="Tired UK parent at 3am? Take our 2-tap baby sleep quiz. Get NHS-aligned product picks that actually work — swaddles, sleep sacks, white noise & blackout blinds. No signup.">
 <link rel="canonical" href="https://parentpick.co.uk/">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -187,6 +192,12 @@
   .sticky-btn{white-space:nowrap; padding:10px 16px; border-radius:12px; background:linear-gradient(180deg,#8B5CF6,#6D28D9); color:white; font-weight:700; font-size:14px; border:1px solid rgba(255,255,255,0.18)}
 @media (max-width: 640px){.hero{padding:80px 0 24px !important} h1{font-size:34px !important;margin:16px auto 12px !important} .sub{font-size:16px !important;margin-bottom:16px !important} .trust-row{margin-top:12px !important;gap:12px} .quiz-wrap{margin-top:32px !important}}
 </style>
+<script>
+// Safe gtag stub - queues events until GA loads after consent
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+</script>
+
 
 <script type="application/ld+json">
 {
@@ -643,16 +654,7 @@
 (function(){
   const banner = document.getElementById('cookie-banner');
   const consent = localStorage.getItem('pp_cookies');
-  function loadGA(){
-    var s=document.createElement('script');
-    s.src='https://www.googletagmanager.com/gtag/js?id=G-B76RM2NRLY';
-    s.async=true; document.head.appendChild(s);
-    window.dataLayer=window.dataLayer||[];
-    function gtag(){dataLayer.push(arguments);}
-    window.gtag=gtag;
-    gtag('js', new Date());
-    gtag('config','G-B76RM2NRLY',{'anonymize_ip':true});
-  }
+  function loadGA(){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-B76RM2NRLY';s.async=true;document.head.appendChild(s);gtag('js', new Date());gtag('config','G-B76RM2NRLY',{'anonymize_ip':true});}
   if(!consent){banner.style.display='block';}
   else if(consent==='accepted'){loadGA();}
   document.getElementById('cookie-accept').onclick=function(){localStorage.setItem('pp_cookies','accepted');banner.style.display='none';loadGA();};
