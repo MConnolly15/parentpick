@@ -1,129 +1,258 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>When Can Baby Sleep With a Blanket? NHS UK Guidance 2026 | ParentPick</title>
-<meta name="description" content="NHS and Lullaby Trust guidance on when babies can safely sleep with a blanket. Why you must wait until 12 months minimum, and safer alternatives like sleep bags for UK parents.">
-<link rel="canonical" href="https://parentpick.co.uk/posts/when-can-baby-sleep-with-blanket-nhs.html">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"When Can Baby Sleep With a Blanket? NHS UK Guidance","author":{"@type":"Person","name":"Mark, Belfast dad of two"},"datePublished":"2026-04-16","dateModified":"2026-04-17","about":{"@type":"Thing","name":"Baby safe sleep"}}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"When can baby have a blanket NHS?","acceptedAnswer":{"@type":"Answer","text":"According to NHS and Lullaby Trust guidance, babies should not sleep with blankets, duvets, quilts or pillows until at least 12 months old. Use a baby sleep bag instead."}},{"@type":"Question","name":"Can my 6 month old sleep with a cellular blanket?","acceptedAnswer":{"@type":"Answer","text":"No. NHS guidance advises against any loose bedding including cellular blankets for babies under 12 months due to suffocation and overheating risks."}},{"@type":"Question","name":"What should baby wear instead of blanket?","acceptedAnswer":{"@type":"Answer","text":"NHS recommends a well-fitted baby sleep bag with appropriate TOG rating for room temperature, instead of blankets."}},{"@type":"Question","name":"When can baby have a duvet UK?","acceptedAnswer":{"@type":"Answer","text":"Lullaby Trust advises waiting until at least 12 months for blankets, and ideally 18 months to 2 years for duvets, when child can easily remove bedding."}}]}
-</script>
-<meta name="theme-color" content="#0F0F23">
+<title>When Can Baby Sleep With a Blanket? NHS Guidance UK 2026 | ParentPick</title>
+<meta name="description" content="Summarises NHS Start for Life and Lullaby Trust guidance on when babies can sleep with a blanket, TOG ratings, and safer alternatives for 0-12 months.">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
-*{box-sizing:border-box}body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:linear-gradient(180deg,#0F0F23 0%,#1a1033 50%,#5B21B6 100%);color:#fff;min-height:100vh}
-.wrap{max-width:720px;margin:0 auto;padding:24px 16px 64px}
-header{display:flex;justify-content:space-between;margin-bottom:24px}
-.logo{font-weight:700;font-size:20px;color:#fff;text-decoration:none}
-.btn{background:#fff;color:#0F0F23;padding:10px 16px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none}
-.card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(16px);border-radius:24px;padding:28px}
-.pill{display:inline-block;background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.4);color:#DDD6FE;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600}
-h1{font-size:32px;margin:14px 0 8px} .subtitle{color:rgba(255,255,255,.75);font-size:17px;margin:0 0 18px}
-.meta{font-size:13px;color:rgba(255,255,255,.65);border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);padding:12px 0;margin:0 0 20px}
-p{margin:0 0 16px;font-size:16px;color:rgba(255,255,255,.92)} h2{font-size:22px;margin:28px 0 10px} h3{font-size:18px;margin:20px 0 8px} ul{margin:0 0 16px 20px} li{margin:0 0 8px}
-a{color:#C4B5FD} .warning{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);border-radius:12px;padding:16px;margin:20px 0}
-.disclosure{font-size:12px;color:rgba(255,255,255,.7);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:12px;margin:0 0 16px}
-.note{background:rgba(124,58,237,.15);border-left:3px solid #7C3AED;padding:12px 16px;margin:16px 0;font-size:14px}
-.cta{margin:32px 0;background:linear-gradient(135deg,#7C3AED 0%,#5B21B6 100%);border-radius:18px;padding:22px;text-align:center}
-.cta a{color:#fff;font-weight:700;text-decoration:none;font-size:17px}
-footer{margin-top:36px;font-size:12px;color:rgba(255,255,255,.6);text-align:center}
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:'Plus Jakarta Sans',system-ui,sans-serif;
+    background:linear-gradient(180deg,#0F0F23 0%,#1a1033 50%,#5B21B6 100%);
+    color:#fff;
+    min-height:100vh;
+    line-height:1.7
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:24px 16px 64px}
+  header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+  .brand{font-weight:700;font-size:20px;color:#fff;text-decoration:none;display:flex;align-items:center;gap:8px}
+  .dot{width:10px;height:10px;border-radius:50%;background:#7C3AED;box-shadow:0 0 12px rgba(124,58,237,.6)}
+  .card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(16px);border-radius:24px;padding:28px}
+  .pill{display:inline-block;background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.4);color:#DDD6FE;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;margin-bottom:10px}
+  h1{font-size:32px;margin:14px 0 8px;color:#fff;line-height:1.2}
+  .byline{font-size:13px;color:rgba(255,255,255,.65);border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);padding:12px 0;margin:0 0 20px}
+  .disclaimer{background:rgba(254,243,199,.12);border:1px solid rgba(253,230,138,.3);color:#fde68a;padding:14px 16px;border-radius:12px;font-size:14px;margin:0 0 20px}
+  p{margin:0 0 16px;font-size:16px;color:rgba(255,255,255,.92)}
+  h2{font-size:22px;margin:28px 0 10px;color:#fff}
+  h3{font-size:18px;margin:20px 0 8px;color:#E9D5FF}
+  ul,ol{margin:0 0 16px 20px} li{margin:0 0 8px}
+  a{color:#C4B5FD;text-decoration:underline}
+  table{width:100%;border-collapse:collapse;margin:20px 0;background:rgba(0,0,0,.2);border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.1)}
+  th,td{padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;font-size:15px;vertical-align:top}
+  th{background:rgba(255,255,255,.08);color:#fff;font-weight:600}
+  tr:last-child td{border-bottom:none}
+  .source{font-size:12px;color:rgba(255,255,255,.6);margin-top:6px}
+  .cta{margin:28px 0;background:linear-gradient(135deg,#7C3AED 0%,#5B21B6 100%);border-radius:18px;padding:22px;text-align:center}
+  .cta h3{margin:0 0 8px;color:#fff;font-size:20px}
+  .cta p{margin:0 0 14px;color:rgba(255,255,255,.9);font-size:15px}
+  .btn{background:linear-gradient(135deg,#8B5CF6 0%,#6D28D9 100%);color:#fff;padding:14px 24px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;display:inline-block;box-shadow:0 4px 14px rgba(109,40,217,.3);transition:transform .15s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(109,40,217,.4)}
+  .btn-sub{font-size:12px;color:rgba(255,255,255,.7);margin-top:8px}
+  footer{margin-top:36px;font-size:12px;color:rgba(255,255,255,.6);text-align:center}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "When Can Baby Sleep With a Blanket? NHS Guidance UK 2026",
+  "author": {"@type": "Organization","name": "ParentPick Editorial Team"},
+  "datePublished": "2026-04-01",
+  "dateModified": "2026-04-20",
+  "publisher": {"@type": "Organization","name": "ParentPick"},
+  "mainEntityOfPage": {"@type":"WebPage"},
+  "about": "Safer sleep guidance summarising NHS and Lullaby Trust advice"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"When can a baby sleep with a blanket according to NHS guidance?",
+      "acceptedAnswer":{"@type":"Answer","text":"According to NHS Start for Life and The Lullaby Trust, loose blankets are not recommended for babies under 12 months. Public health guidance states that a well-fitted baby sleep bag is the safer alternative for this age group, with a light blanket only considered from 12 months onwards."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can a newborn sleep with a cellular blanket?",
+      "acceptedAnswer":{"@type":"Answer","text":"The Lullaby Trust advises against any loose bedding, including cellular blankets, for babies under 12 months. NHS guidance states that newborns should sleep in a clear cot on their back, without blankets, pillows or duvets, to reduce overheating and suffocation risk."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is a baby sleep bag safer than a blanket?",
+      "acceptedAnswer":{"@type":"Answer","text":"According to the Lullaby Trust, a correctly sized baby sleep bag with a fitted neck and armholes is safer than a loose blanket for babies under 12 months because it cannot cover the face. NHS guidance states not to place a blanket over a sleep bag."}
+    },
+    {
+      "@type":"Question",
+      "name":"What TOG should be used for a 19°C nursery?",
+      "acceptedAnswer":{"@type":"Answer","text":"Guidance published by the Lullaby Trust and NHS Start for Life suggests a 2.5 TOG sleep bag with a vest and sleepsuit for rooms at 18–20°C, which is described as the ideal range. Public health guidance states parents should check the baby's chest or back of neck is warm, not hot."}
+    },
+    {
+      "@type":"Question",
+      "name":"When can a baby have a duvet?",
+      "acceptedAnswer":{"@type":"Answer","text":"NHS Start for Life guidance advises that duvets, quilts and pillows are not to be used for babies under 12 months. The Lullaby Trust recommends waiting until at least 12 months for a light blanket, and many health visitors advise waiting until 18 months or older before introducing a low-tog toddler duvet."}
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="wrap">
-<header><a href="/" class="logo">ParentPick</a><a href="/" class="btn">Get your fix</a></header>
-<main><article class="card">
-<span class="pill">SAFE SLEEP</span>
-<h1>When Can Baby Sleep With a Blanket? NHS Guidance</h1>
-<p class="subtitle">The answer is 12 months minimum – here's the safer alternative UK parents use.</p>
-<div class="meta">Written by Mark, Belfast dad of two • Checked against NHS and Lullaby Trust • Last updated 17 April 2026</div>
-<div class="disclosure"><strong>Affiliate disclosure:</strong> As an Amazon Associate we earn from qualifying purchases. <strong>Medical information:</strong> This article summarises publicly available guidance from the NHS and Lullaby Trust. It is not medical advice. Always consult your health visitor, midwife or GP.</div>
+<header>
+  <div class="brand"><span class="dot"></span> ParentPick</div>
+</header>
 
-<div class="warning">
-<p><strong>NHS and Lullaby Trust guidance:</strong> No blankets, duvets, quilts or pillows for babies under 12 months. Use a baby sleep bag instead.</p>
+<main>
+<article class="card">
+  <div class="disclaimer">
+    This article summarises publicly available guidance from NHS Start for Life and The Lullaby Trust (accessed April 2026). It is general information only and does not replace personal medical advice. Always speak to your health visitor, midwife or GP for concerns about your baby.
+  </div>
+
+  <span class="pill">Safer Sleep • UK Guidance</span>
+  <h1>When Can Baby Sleep With a Blanket? NHS Guidance UK 2026</h1>
+  <p class="byline">By ParentPick Editorial Team | Reviewed against NHS and Lullaby Trust sources | Updated April 2026</p>
+
+  <p>Many parents in the UK ask when a blanket becomes safe. According to NHS Start for Life safer-sleep guidance, the position for the first year is consistent: babies do not need a blanket, and loose bedding is best avoided. The Lullaby Trust recommends using a baby sleep bag instead of any blanket for babies under 12 months.</p>
+
+  <p>This article summarises what UK public health bodies currently publish about blankets, cellular blankets, sleep bags, and room temperature. All recommendations below are attributed to NHS or Lullaby Trust guidance.</p>
+
+  <h2>What NHS and Lullaby Trust Actually Say</h2>
+  <p>According to NHS Start for Life – Reduce the risk of SIDS (2024), the safest place for a baby to sleep for the first six months is in a separate cot or Moses basket in the same room as parents or carers, on a firm, flat, waterproof mattress, with no pillows, duvets, cot bumpers, pods, or loose blankets.</p>
+  <p>The Lullaby Trust recommends keeping the cot completely clear. Public health guidance states that a well-fitted baby sleep bag is preferable to loose bedding because it stays in place and cannot cover a baby's face.</p>
+  <p>NHS guidance states not to place a blanket over a sleep bag. The Lullaby Trust also advises against combining swaddling with a sleep bag due to overheating risk. For more on the first six months, see <a href="/posts/safe-sleep-0-6-months.html">safe sleep 0–6 months</a>.</p>
+
+  <h2>Why 12 Months Is the Minimum Age Cited</h2>
+  <p>According to the Lullaby Trust, babies under 12 months have limited strength and coordination to push loose fabric away from their nose and mouth. Public health guidance states that this increases the risk of accidental covering of the face, which is associated with overheating and suffocation.</p>
+  <p>NHS advises that overheating is a known risk factor for sudden infant death syndrome (SIDS). Babies thermoregulate largely through their head and face, which is why guidance recommends keeping the head uncovered during sleep.</p>
+  <p>The Lullaby Trust notes that after around 12 months, most babies can roll both ways, sit up, and free themselves from bedding more reliably. This developmental change is why UK guidance cites 12 months as the earliest point to consider a light blanket, not as a requirement to introduce one. Further detail for this age band is summarised in <a href="/posts/safe-sleep-6-12-months.html">safe sleep 6–12 months</a>.</p>
+
+  <h2>Are Cellular Blankets Considered Safe?</h2>
+  <p>Cellular cotton blankets were historically mentioned because the holes allow airflow. According to current Lullaby Trust safer-sleep advice, even lightweight cellular blankets are not recommended for babies under 12 months.</p>
+  <p>Public health guidance states that if parents choose to use a blanket before 12 months against current advice, it would need to be thin, cellular, and firmly tucked in no higher than the armpits, with baby placed feet-to-foot. However, the Lullaby Trust recommends a sleep bag instead, as tucking can loosen during the night.</p>
+  <p>NHS guidance states that thick blankets, fleece throws, weighted blankets, and quilts are not to be used for babies under 12 months under any circumstances.</p>
+
+  <h2>What to Use Instead of a Blanket (0–12 Months)</h2>
+  <p>The Lullaby Trust recommends a baby sleep bag suitable for the baby's weight and with a fitted neck and armholes. According to NHS guidance, sleep bags remove the need for loose bedding and help maintain a more consistent temperature.</p>
+  <p>Public health guidance states that babies are to be placed on their back for every sleep, with feet to the foot of the cot, on a firm flat mattress, and in the same room as a parent or carer for the first six months, day and night.</p>
+  <p>NHS guidance states not to place a blanket over a sleep bag. The Lullaby Trust also advises that hats are not to be worn indoors for sleep after the initial post-birth period.</p>
+  <p>Many UK families choose a regulated cotton sleep bag such as the Tommee Tippee Grobag, which is available in multiple TOG ratings. <a href="https://amzn.to/4sqq7QT" rel="sponsored nofollow">See current price</a>.</p>
+
+  <div class="cta">
+    <div><strong>Not sure which TOG for tonight?</strong><br> Takes about 12 seconds – select baby's age and biggest sleep struggle for a tailored safer-sleep checklist.</div>
+    <a class="btn" href="/quiz.html">Start 2-Tap Sleep Finder</a>
+  </div>
+
+  <h2>How to Keep Baby Warm Safely Without a Blanket</h2>
+  <p>According to NHS Start for Life, an ideal room temperature for baby sleep is 16–20°C. The Lullaby Trust recommends using a room thermometer rather than estimating by touch of the air.</p>
+  <p>Public health guidance states that layering with a vest and sleepsuit under a sleep bag is usually sufficient. NHS advises that babies do not need extra bedding because they cannot regulate temperature as adults do. See also <a href="/posts/room-temperature-baby-nhs.html">room temperature guidance</a>.</p>
+
+  <h2>Choosing the Right TOG Rating</h2>
+  <p>TOG measures warmth, not thickness. The table below summarises guidance published by the Lullaby Trust and NHS Start for Life to help reduce overheating risk. This is general information only.</p>
+
+  <table role="table" aria-label="TOG guidance table">
+    <thead>
+      <tr>
+        <th>Room Temperature</th>
+        <th>TOG suggested in NHS/Lullaby Trust guidance</th>
+        <th>Typical clothing underneath (examples from guidance)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>24°C+</td>
+        <td>0.3-0.5 TOG</td>
+        <td>Nappy, or short-sleeve vest</td>
+      </tr>
+      <tr>
+        <td>21-23°C</td>
+        <td>1.0 TOG</td>
+        <td>Short-sleeve vest + light sleepsuit</td>
+      </tr>
+      <tr>
+        <td>18-20°C (ideal range)</td>
+        <td>2.5 TOG</td>
+        <td>Vest + sleepsuit</td>
+      </tr>
+      <tr>
+        <td>16-17°C</td>
+        <td>2.5 TOG + one extra layer</td>
+        <td>Vest + sleepsuit + thin pyjamas. NHS advises warming room if possible</td>
+      </tr>
+      <tr>
+        <td>Under 16°C</td>
+        <td>Heat room first</td>
+        <td>NHS advises not to use thick bedding plus blanket, use safe heating to reach 16°C+</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="source">Source: Lullaby Trust Safer Sleep Advice; NHS Start for Life – Reduce the risk of SIDS (2024). Always check baby's chest or back of neck is warm not hot. Seek personal advice from health visitor if unsure.</p>
+
+  <p>The Lullaby Trust recommends checking the chest or back of the neck, not hands or feet, to assess warmth. Public health guidance states that a baby who is sweating or has damp hair is likely too hot. A full explainer is available in <a href="/posts/tog-ratings-made-simple.html">TOG ratings made simple</a>.</p>
+
+  <div class="cta">
+    <h3>Not sure what's normal for your baby's age?</h3>
+    <p>Answer 2 quick taps and get the NHS-checked guide for your exact struggle — waking hourly, bedtime battles, or 5am starts.</p>
+    <a href="/quiz.html" class="btn">Start 2-Tap Sleep Finder →</a>
+    <div class="btn-sub">Takes 12 seconds • No email needed</div>
+  </div>
+
+  <h2>When It Is Considered Safe to Introduce a Blanket</h2>
+  <p>According to the Lullaby Trust, from 12 months onwards parents may choose to introduce a small, light, breathable blanket if they wish to move away from a sleep bag. NHS guidance does not mandate a blanket at any age, and many families continue with sleep bags into toddlerhood.</p>
+  <p>Public health guidance states that any first blanket after 12 months should remain below shoulder height and must not cover the head. The Lullaby Trust recommends continuing to keep pillows, duvets and cot bumpers out of the cot.</p>
+
+  <h2>Step-by-Step: Introducing First Blanket After 12 Months</h2>
+  <ol>
+    <li>According to NHS guidance, parents are advised to continue placing baby on their back to sleep for the first year, and onward if tolerated.</li>
+    <li>The Lullaby Trust recommends using a firm, flat mattress with a fitted sheet only, in a clear cot.</li>
+    <li>Public health guidance states to position the child feet-to-foot and tuck a thin cellular blanket across the chest, no higher than the armpits.</li>
+    <li>NHS advises ensuring the head remains uncovered during sleep.</li>
+    <li>The Lullaby Trust recommends avoiding weighted or heavy blankets for toddlers, as these increase overheating risk.</li>
+  </ol>
+
+  <h2>When Can a Baby Have a Duvet or Quilt?</h2>
+  <p>According to NHS Start for Life, duvets, quilts and pillows are not to be used for babies under 12 months due to suffocation and overheating risk. The Lullaby Trust recommends that a duvet is not introduced before 12 months, and many UK health visiting teams advise waiting until at least 18 months, choosing a low-tog toddler duvet (around 4.0 TOG) with no pillow.</p>
+  <p>Public health guidance states that adult bedding is not suitable for infants. For pillow-specific timing, see <a href="/posts/when-can-baby-have-pillow-nhs.html">when can baby have a pillow – NHS view</a>.</p>
+
+  <h2>Common Mistakes Parents Are Advised to Avoid</h2>
+  <ul>
+    <li>NHS advises not to use loose blankets, throws, or muslins as covers for babies under 12 months during sleep.</li>
+    <li>The Lullaby Trust recommends not placing a blanket over a baby sleep bag, as this combination increases overheating risk.</li>
+    <li>Public health guidance states not to overdress a baby under a high-TOG bag; more layers do not equal safer.</li>
+    <li>NHS guidance states not to use electric blankets, hot water bottles, or to position cots next to radiators or heaters.</li>
+    <li>The Lullaby Trust advises not to let a baby sleep on a sofa or armchair, with or without a blanket, due to a significantly increased SIDS risk.</li>
+    <li>Public health guidance states not to use cot bumpers, sleep pods, or nests as an alternative to blankets.</li>
+  </ul>
+  <div class="cta">
+    <h3>Find your baby's sleep fix in 12 seconds</h3>
+    <p>Select age and biggest struggle — we'll show the right NHS guidance, no blanket needed.</p>
+    <a href="/quiz.html" class="btn">Start 2-Tap Sleep Finder →</a>
+    <div class="btn-sub">Takes 12 seconds • No email needed</div>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+  <h3>1. When can a baby sleep with a blanket according to NHS guidance?</h3>
+  <p>According to NHS Start for Life and the Lullaby Trust, loose blankets are not recommended for babies under 12 months. Public health guidance states a well-fitted sleep bag is the safer option for this age group.</p>
+
+  <h3>2. Can a newborn sleep with a cellular blanket?</h3>
+  <p>The Lullaby Trust advises against any loose bedding for newborns, including cellular blankets. NHS guidance states newborns should sleep in a clear cot with no blanket, using a sleep bag if additional warmth is needed.</p>
+
+  <h3>3. Is a sleep bag safer than a blanket?</h3>
+  <p>According to the Lullaby Trust, yes for under-12s. A correctly sized sleep bag cannot ride up over the face. NHS guidance states not to place a blanket over a sleep bag.</p>
+
+  <h3>4. What TOG for a 19°C room?</h3>
+  <p>Guidance published by the Lullaby Trust and NHS Start for Life suggests a 2.5 TOG bag with a vest and sleepsuit for 18–20°C, which is described as the ideal range.</p>
+
+  <h3>5. When can a toddler have a duvet?</h3>
+  <p>NHS guidance advises no duvets under 12 months. The Lullaby Trust recommends waiting until at least 12 months for a blanket and considering a low-tog toddler duvet from around 18 months, following manufacturer age guidance.</p>
+
+  <p style="margin-top:28px">In summary, UK public health bodies are consistent: according to NHS and Lullaby Trust guidance, babies under 12 months should not sleep with a blanket. A sleep bag, clear cot, back-sleeping, and a room temperature of 16–20°C are the measures most frequently cited. Parents with specific concerns about temperature, prematurity, or medical conditions are advised by the NHS to seek personalised advice from a health visitor, midwife or GP.</p>
+
+</article>
+</main>
+
+<footer>
+  <div class="links">
+    <a href="/posts/tog-ratings-made-simple.html">TOG Guide</a> ·
+    <a href="/posts/room-temperature-baby-nhs.html">Room Temp</a> ·
+    <a href="/quiz.html">Sleep Finder</a>
+  </div>
+  <p style="margin-top:12px">As an Amazon Associate, ParentPick earns from qualifying purchases. This page contains a sponsored link to Tommee Tippee Grobag.</p>
+  <p>Information sources: NHS Start for Life – Reduce the risk of SIDS (2024); The Lullaby Trust Safer Sleep Advice (accessed April 2026). Content summarises public guidance only.</p>
+</footer>
 </div>
-
-<p>Our health visitor in Belfast was very clear about loose bedding risks. UK guidance is consistent across NHS and Lullaby Trust, yet many high street shops still sell "newborn blanket sets". According to published safe sleep guidance, these should not be used for unsupervised sleep under 12 months.</p>
-
-<h2>When can baby have a blanket NHS?</h2>
-<p>According to NHS guidance, the minimum age is 12 months. The Lullaby Trust, the UK's leading safe sleep charity, states the same: no loose bedding including blankets until at least the first birthday.</p>
-<p>This guidance exists because babies develop the ability to move bedding away from their face between 9-12 months, but this varies by child. Waiting until 12 months ensures most babies can roll both ways, sit up, and deliberately push objects away.</p>
-
-<h2>Why blankets are not recommended under 12 months</h2>
-<p>NHS and Lullaby Trust identify several risks with loose bedding:</p>
-<ul>
-<li><strong>Suffocation risk:</strong> Baby wriggles during sleep, blanket can cover face. Babies under 9-12 months may not have the strength or coordination to remove it</li>
-<li><strong>Overheating:</strong> Lullaby Trust lists overheating as a known risk factor for SIDS. Blankets trap heat and cannot be kicked off reliably by young babies</li>
-<li><strong>Entanglement:</strong> Limbs can become wrapped in loose fabric</li>
-<li><strong>Inconsistent temperature:</strong> Blanket falls off, baby gets cold and wakes, leading to parents adding more layers</li>
-</ul>
-
-<div class="note">Even "cellular blankets" with holes are not recommended by NHS for babies under 12 months. The holes do not eliminate suffocation risk according to safe sleep guidance.</div>
-
-<h2>Can my 6 month old sleep with a cellular blanket?</h2>
-<p>No. NHS guidance does not make exceptions for cellular blankets, knitted blankets, or muslins used as covers. The recommendation is clear: no loose bedding under 12 months regardless of material.</p>
-<p>At 6 months, many babies are starting to roll and move more, which actually increases the risk of becoming tangled or covered. This is why sleep bags are specifically recommended.</p>
-
-<h2>What to use instead – baby sleep bags</h2>
-<p>NHS specifically recommends baby sleep bags (also called baby sleeping bags or grobags) as the safer alternative. We used them for both our children from birth to age 2.</p>
-<p>Benefits highlighted in guidance:</p>
-<ul>
-<li>Cannot cover baby's face or head</li>
-<li>Provides consistent warmth all night</li>
-<li>Available in different TOG ratings for room temperature – see our <a href="/posts/tog-ratings-made-simple.html">TOG ratings guide</a></li>
-<li>Baby cannot kick off and become cold</li>
-<li>Reduces risk of climbing out of cot later</li>
-</ul>
-<p>We used the <a href="https://amzn.to/4sqq7QT" target="_blank" rel="nofollow sponsored">Tommee Tippee Grobag</a> in 2.5 TOG for winter (room 16-18°C) and 1.0 TOG for summer. It meets the British safety standard BS EN 16781:2018 referenced in UK guidance.</p>
-
-<h2>What age is actually safe for blankets?</h2>
-<p><strong>12 months:</strong> Absolute minimum according to guidance, only if baby can roll both ways, sit up unaided, and deliberately pull blanket off face.</p>
-<p><strong>18 months+:</strong> Considered safer by many health visitors. Most UK parents wait until toddler bed transition around 18-24 months.</p>
-<p><strong>Our experience:</strong> We introduced a light cellular blanket at 20 months, used over the sleep bag in winter. The test was whether our child could pull it off and ask for it back – showing deliberate control.</p>
-
-<h2>When can baby have a duvet UK?</h2>
-<p>Duvets carry higher risk than blankets due to greater warmth and weight. Lullaby Trust guidance suggests waiting until at least 18 months to 2 years for a duvet, and ideally until the child is in a bed rather than cot.</p>
-<p>Many parents continue with sleep bags until age 3-4, then transition directly to duvet. Sleep bags are available in larger sizes up to 4-6 years.</p>
-
-<h2>But my baby hates sleep bags</h2>
-<p>This is common during transition. According to NHS guidance, persistence is important for safety. Try:</p>
-<ul>
-<li>Different style – some have arms, some are sleeveless, some are footless for toddlers</li>
-<li>Ensure correct size – too big is unsafe and uncomfortable</li>
-<li>Use for daytime naps first to build familiarity</li>
-<li>Swaddle transition bags help for babies moving from swaddling at 2-3 months</li>
-<li>Check TOG rating – baby may be too hot or cold. See our <a href="/posts/room-temperature-baby-nhs.html">room temperature guide</a></li>
-</ul>
-
-<h2>What about swaddling with blankets?</h2>
-<p>NHS guidance on swaddling: if you choose to swaddle, use a thin cotton muslin, stop by 2-3 months or at first signs of rolling (whichever is earlier). Never swaddle over 3 months, never place swaddled baby on front or side, never use blanket over swaddle.</p>
-<p>We stopped swaddling at 8 weeks and moved straight to a 2.5 TOG sleep bag – this made the 4-month sleep regression easier as there was no transition to manage later.</p>
-
-<h2>Grandparents insisting on blankets?</h2>
-<p>This is very common in the UK. Previous generations used blankets routinely. SIDS rates in the UK have fallen by over 80% since the Back to Sleep campaign in 1991, which included removing loose bedding as a key recommendation.</p>
-<p>Show grandparents current guidance from <a href="https://www.lullabytrust.org.uk" target="_blank" rel="nofollow">Lullaby Trust</a> or NHS website. It's not about criticising past practices, but following current evidence.</p>
-
-<h2>When you do introduce a blanket at 12+ months</h2>
-<p>According to safe sleep guidance for toddlers:</p>
-<ul>
-<li>Use light cellular blanket only, not heavy quilt or duvet initially</li>
-<li>Tuck in firmly at foot of bed, no higher than chest level</li>
-<li>Keep baby's feet to foot of cot (feet-to-foot position)</li>
-<li>Ensure baby can easily push blanket away</li>
-<li>Continue to avoid pillows until 12 months minimum</li>
-</ul>
-
-<h2>Room temperature matters more than blankets</h2>
-<p>Many parents want to use blankets because the room feels cold. NHS guidance recommends fixing the room temperature rather than adding bedding. Keep room between 16-20°C and use correct TOG sleep bag.</p>
-<p>We used a simple digital thermometer at cot height. Our Belfast house was 17°C overnight in winter – a 2.5 TOG sleep bag with vest and sleepsuit was sufficient, no blanket needed.</p>
-
-<div class="cta"><a href="/posts/tog-ratings-made-simple.html">See what TOG you need for your room temperature →</a></div>
-
-<p style="margin-top:24px;font-size:14px;color:rgba(255,255,255,0.7);border-top:1px solid rgba(255,255,255,0.1);padding-top:16px;"><strong>Sources:</strong> This article summarises guidance from <a href="https://www.nhs.uk/conditions/baby/caring-for-a-newborn/reduce-the-risk-of-sudden-infant-death-syndrome/" target="_blank">NHS SIDS prevention</a> and <a href="https://www.lullabytrust.org.uk/safer-sleep-advice/" target="_blank">Lullaby Trust safer sleep advice</a> (accessed April 2026). Always follow current NHS guidance and consult your health visitor for personal advice.</p>
-</article></main>
-<footer><p>ParentPick is a participant in the Amazon EU Associates Programme. As an Amazon Associate we earn from qualifying purchases.</p></footer>
-</div></body></html>
+</body>
+</html>
